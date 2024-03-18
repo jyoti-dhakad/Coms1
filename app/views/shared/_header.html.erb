@@ -1,0 +1,64 @@
+<style>
+  /* Custom CSS */
+  .navbar {
+    background-color: pink;
+  }
+
+  .navbar-nav .nav-link {
+    color: black !important;
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container-fluid">
+    <%= link_to 'Course Offering Management System', root_path, class: "navbar-brand" %>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+        <% if current_user %>
+          <% if current_user.role == "student" %>
+            <li class="nav-item">
+              <%= link_to "Profile", student_path(current_user), class: "nav-link me-2" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Edit Profile", edit_user_registration_path, class: "nav-link me-2" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Home', students_path, class: "nav-link" %>
+            </li>
+
+          <% elsif current_user.role == "Instructor" %>
+            <li class="nav-item">
+              <%= link_to 'Home', instructors_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Instructor Profile", instructor_path(current_user), class: "nav-link me-2" %>
+            </li>
+          <% else %>
+            <li class="nav-item">
+              <%= link_to "Edit Profile", edit_user_registration_path, class: "nav-link me-2" %>
+            </li>
+          <% end %>
+        <% else %>
+          
+        <% end %>
+      </ul>
+
+      <ul class="navbar-nav me-2">
+        <% if current_user %>
+          <li class="nav-item">
+            <%= link_to 'Sign Out', custom_sign_out_path, method: :delete, class: 'btn btn-danger' %>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to 'Login', new_user_session_path, class: 'btn btn-success me-2' %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>

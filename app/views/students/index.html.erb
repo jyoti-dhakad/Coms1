@@ -1,0 +1,25 @@
+<div class="col-lg-12">
+<%= flash[:notice] %>
+<div class="card mt-5 mb-5">
+ <div class="card-body">
+   <h2 class="text-center"> Listing Of Courses </h2>
+ </div>
+</div>
+
+<table class ="table table-bordered mt-5 md-5">
+  <thead> <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Course Fees</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @course.each do |course| %> <tr>
+        <td><%= link_to course.name, new_student_path %></td>
+        <td><%= course.description %></td>
+        <td><%= course.course_fees %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
