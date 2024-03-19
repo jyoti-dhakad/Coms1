@@ -1,6 +1,9 @@
 class InstructorsController < ApplicationController
   def index
+    
+    
     @course = Course.all
+    
   end
 
   

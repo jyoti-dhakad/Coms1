@@ -1,5 +1,6 @@
 class StudentsController < ApplicationController
   def index
+    
     @course = Course.all
   end
 
@@ -8,5 +9,14 @@ class StudentsController < ApplicationController
   end
 
   def new
+  end
+
+  def download
+    pdf = Prawn::Document.new
+    pdf.text 'hello world!!'
+
+    send_data(pdf.render,
+    filename: 'hello.pdf',
+    type: 'application/pdf')
   end
 end

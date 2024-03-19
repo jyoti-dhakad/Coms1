@@ -5,21 +5,46 @@
    <h2 class="text-center"> Listing Of Courses </h2>
  </div>
 </div>
+<% if current_user %>
+  <% if current_user.status == "approved" %>
+    <table class ="table table-bordered mt-5 md-5">
+      <thead> <tr>
+          <th class="text-center">Name</th>
+          <th class="text-center">Description</th>
+          <th class="text-center">Course Fees</th>
+          <th class="text-center"> Download PDF </th>
+          <th class="text-center"> Assigned Instructor </th>
+          <th class="text-center"> Bye now </th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <% @course.each do |course| %> <tr>
+            <td><%= course.name %></td>
+            <td><%= course.description %></td>
+            <td><%= course.course_fees %></td>
+            <td> <%= link_to "download_pdf", download_path %> </td>
+            <td> <%= link_to course.instructor.first_name, instructor_path(:id) %> </td>
+            <td> <%= link_to "Bye_now",students_path %> </td>
+           
 
-<table class ="table table-bordered mt-5 md-5">
-  <thead> <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Course Fees</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @course.each do |course| %> <tr>
-        <td><%= link_to course.name, new_student_path %></td>
-        <td><%= course.description %></td>
-        <td><%= course.course_fees %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% else %>
+    <div class="card mt-4 mb-2">
+      <div>
+        <h2 class="text-center"> After Approval You Can See All Courses </h2>
+      </div>
+    </div>
+    
+  <% end %>
+<% else %>
+          
+<% end %>
+             
+
+            
+            
 </div>

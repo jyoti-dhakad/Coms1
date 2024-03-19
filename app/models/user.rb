@@ -6,9 +6,14 @@ class User < ApplicationRecord
          enum role: { Instructor: 'Instructor', student: 'student' }
 
         has_one_attached :profile_image
+        enum status: { pending: 0, cancelled: 1, approved: 2 }
 
 
-        def instructor?
-          role == 'instructor'
-        end
+        after_create :send_welcome_email
+
+        private
+      
+        def send_welcome_email
+          UserMailer.welcome_email(self).deliver_now
+        end  
 end

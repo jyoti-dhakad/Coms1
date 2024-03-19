@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_03_16_115052) do
+ActiveRecord::Schema.define(version: 2024_03_19_082439) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -91,6 +91,8 @@ ActiveRecord::Schema.define(version: 2024_03_16_115052) do
     t.float "course_fees"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "instructor_id"
+    t.index ["instructor_id"], name: "index_courses_on_instructor_id"
   end
 
   create_table "instructors", force: :cascade do |t|
@@ -100,8 +102,6 @@ ActiveRecord::Schema.define(version: 2024_03_16_115052) do
     t.integer "phone_number"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "course_id"
-    t.index ["course_id"], name: "index_instructors_on_course_id"
   end
 
   create_table "students", force: :cascade do |t|
@@ -133,12 +133,13 @@ ActiveRecord::Schema.define(version: 2024_03_16_115052) do
     t.string "state"
     t.string "country"
     t.string "pincode"
+    t.integer "status", default: 0
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "instructors", "courses"
+  add_foreign_key "courses", "instructors"
   add_foreign_key "students", "courses"
 end

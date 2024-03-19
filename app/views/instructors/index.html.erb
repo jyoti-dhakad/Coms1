@@ -2,29 +2,44 @@
 <%= flash[:notice] %>
 <div class="card mt-5 mb-5">
  <div class="card-body">
-   <h2 class="text-center"> Listing courses </h2>
+   <h2 class="text-center"> Listing Of Courses </h2>
  </div>
 </div>
-
-<table class ="table table-bordered mt-5 md-5">
- <thead>
-    <tr>
-      
-      <th>name</th>
-      
-     
-      
-    </tr>
- <thead>
- <tbody>
-    <% @course.each do |e| %>
-       <tr>
-          <td> <%= e.name %> </td>
+<% if current_user %>
+  <% if current_user.status == "approved" %>
+    <table class ="table table-bordered mt-5 md-5">
+      <thead> <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Course Fees</th>
+          <th> Download PDF </th>
+          <th>  </th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @course.each do |course| %> <tr>
+            <td><%= course.name %></td>
+            <th><%= course.description %></th>
+            <td><%= course.course_fees %></td>
+            <td> <%= link_to "download_pdf", download_path %> </td>
+            <td> <%= link_to "Bye_now",admin_courses_path %> </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% else %>
+    <div class="card mt-4 mb-2">
+      <div>
+        <h2 class="text-center"> After Approval You Can See All Courses </h2>
+      </div>
+    </div>
+    
+  <% end %>
+<% else %>
           
-              
-         
-       </tr>
-    <% end %>
-   </tbody>
-</table>
+<% end %>
+             
+
+            
+            
 </div>

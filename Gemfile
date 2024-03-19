@@ -60,3 +60,8 @@ gem 'devise'
 
 
 gem 'active_admin_role'
+
+gem 'arctic_admin'
+
+
+gem "prawn", "~> 2.5"

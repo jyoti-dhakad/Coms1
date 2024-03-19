@@ -1,2 +1,35 @@
-<h1>Instructors#show</h1>
-<p>Find me in app/views/instructors/show.html.erb</p>
+<div class="col-lg-6">
+    <div class="card rounded-0 mt-5 mb-5">
+        <div class="card-body">
+            
+            <h2 class="text-center">Instructor Details</h2>
+            <div class="row mt-5">
+                <div class="text-center mb-4">
+                    <% if current_user.profile_image.attached? %>
+                        <%= image_tag current_user.profile_image, class: "rounded-circle float-left", alt: "Profile Image", style: "width: 200px; height: 200px; margin-right: 500px;" %>
+                    <% else %>
+                        <h5>No image </h5>
+                    <% end %>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-3">Personal Information </h3>
+                    <p class="lead"><strong>First Name:</strong> <%= current_user.first_name %></p>
+                    <p class="lead"><strong>Last Name:</strong> <%= current_user.last_name %></p>
+                    <p class="lead"><strong>Email :</strong> <%= current_user.email %></p>
+                    <p class="lead"><strong>Role :</strong> <%= current_user.role %></p>
+                    <p class="lead"><strong>Phone number:</strong> <%= current_user.phone_number %></p>
+                    <p class="lead"><strong>Language Known:</strong> <%= current_user.language_known %></p>
+                    <p class="lead"><strong>City :</strong> <%= current_user.city %></p>
+                    <p class="lead"><strong>State :</strong> <%= current_user.state %></p>
+                    <p class="lead"><strong>Country :</strong> <%= current_user.country %></p>
+                    <p class="lead"><strong>Pincode :</strong> <%= current_user.pincode %></p>
+                    
+                </div>
+                
+               
+                
+            </div> 
+                                                                                                                                                                                                                                                                                                                      
+        </div>
+    </div>
+</div>
