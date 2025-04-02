@@ -12,13 +12,16 @@
 
 ActiveRecord::Schema.define(version: 2024_03_19_082439) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
     t.string "resource_type"
-    t.integer "resource_id"
+    t.bigint "resource_id"
     t.string "author_type"
-    t.integer "author_id"
+    t.bigint "author_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["author_type", "author_id"], name: "index_active_admin_comments_on_author"
@@ -37,8 +40,8 @@ ActiveRecord::Schema.define(version: 2024_03_19_082439) do
 
   create_table "active_admin_permissions", force: :cascade do |t|
     t.integer "managed_resource_id", null: false
-    t.integer "role", limit: 1, default: 0, null: false
-    t.integer "state", limit: 1, default: 0, null: false
+    t.integer "role", limit: 2, default: 0, null: false
+    t.integer "state", limit: 2, default: 0, null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["managed_resource_id", "role"], name: "active_admin_permissions_index", unique: true
@@ -80,7 +83,7 @@ ActiveRecord::Schema.define(version: 2024_03_19_082439) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "role", limit: 1, default: 0, null: false
+    t.integer "role", limit: 2, default: 0, null: false
     t.index ["email"], name: "index_admin_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
@@ -91,7 +94,7 @@ ActiveRecord::Schema.define(version: 2024_03_19_082439) do
     t.float "course_fees"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "instructor_id"
+    t.bigint "instructor_id"
     t.index ["instructor_id"], name: "index_courses_on_instructor_id"
   end
 
@@ -111,7 +114,7 @@ ActiveRecord::Schema.define(version: 2024_03_19_082439) do
     t.integer "phone_number"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "course_id"
+    t.bigint "course_id"
     t.index ["course_id"], name: "index_students_on_course_id"
   end
 
@@ -123,7 +126,6 @@ ActiveRecord::Schema.define(version: 2024_03_19_082439) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "role"
     t.string "first_name"
     t.string "last_name"
     t.integer "phone_number"

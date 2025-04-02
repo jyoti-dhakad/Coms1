@@ -21553,3 +21553,278 @@ Processing by Admin::UsersController#index as HTML
 Completed 200 OK in 238ms (Views: 226.7ms | ActiveRecord: 1.8ms | Allocations: 122507)
 
 
+Started GET "/admin" for ::1 at 2025-04-02 17:25:34 +0530
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms | Allocations: 1580)
+
+
+Started GET "/admin/login" for ::1 at 2025-04-02 17:25:34 +0530
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering layout /home/hp/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activeadmin-2.12.0/app/views/layouts/active_admin_logged_out.html.erb
+  Rendering /home/hp/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activeadmin-2.12.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hp/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activeadmin-2.12.0/app/views/active_admin/devise/shared/_links.erb (Duration: 1.0ms | Allocations: 613)
+  Rendered /home/hp/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activeadmin-2.12.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (Duration: 16.9ms | Allocations: 11132)
+  Rendered layout /home/hp/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activeadmin-2.12.0/app/views/layouts/active_admin_logged_out.html.erb (Duration: 1334.2ms | Allocations: 476109)
+Completed 200 OK in 1350ms (Views: 1341.0ms | ActiveRecord: 0.6ms | Allocations: 483872)
+
+
+Started GET "/" for ::1 at 2025-04-02 17:25:40 +0530
+Processing by HomesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 205)
+  Rendered shared/_header.html.erb (Duration: 1.0ms | Allocations: 650)
+  Rendered shared/_messages.html.erb (Duration: 0.3ms | Allocations: 189)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 63.6ms | Allocations: 29994)
+Completed 200 OK in 69ms (Views: 66.8ms | ActiveRecord: 0.0ms | Allocations: 31440)
+
+
+Started GET "/users/sign_in" for ::1 at 2025-04-02 17:25:49 +0530
+Processing by Users::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered /home/hp/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.9.3/app/views/devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 632)
+  Rendered users/sessions/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1761)
+  Rendered shared/_header.html.erb (Duration: 0.4ms | Allocations: 180)
+  Rendered shared/_messages.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 75)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 10616)
+Completed 200 OK in 102ms (Views: 28.1ms | ActiveRecord: 2.9ms | Allocations: 21731)
+
+
+Started GET "/users/sign_up" for ::1 at 2025-04-02 17:25:53 +0530
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 2.9ms | Allocations: 221)
+  Rendered users/shared/_links.html.erb (Duration: 3.9ms | Allocations: 528)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 30.4ms | Allocations: 4922)
+  Rendered shared/_header.html.erb (Duration: 0.5ms | Allocations: 180)
+  Rendered shared/_messages.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 75)
+  Rendered layout layouts/application.html.erb (Duration: 50.0ms | Allocations: 13730)
+Completed 200 OK in 66ms (Views: 61.7ms | ActiveRecord: 0.0ms | Allocations: 15709)
+
+
+Started GET "/admin/login" for ::1 at 2025-04-02 17:26:04 +0530
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering layout /home/hp/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activeadmin-2.12.0/app/views/layouts/active_admin_logged_out.html.erb
+  Rendering /home/hp/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activeadmin-2.12.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/hp/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activeadmin-2.12.0/app/views/active_admin/devise/shared/_links.erb (Duration: 0.8ms | Allocations: 136)
+  Rendered /home/hp/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activeadmin-2.12.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (Duration: 22.1ms | Allocations: 6108)
+  Rendered layout /home/hp/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/activeadmin-2.12.0/app/views/layouts/active_admin_logged_out.html.erb (Duration: 56.6ms | Allocations: 24941)
+Completed 200 OK in 62ms (Views: 58.4ms | ActiveRecord: 0.0ms | Allocations: 25470)
+
+
+Started GET "/users/sign_up" for ::1 at 2025-04-02 17:26:06 +0530
+Processing by Users::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 42)
+  Rendered users/shared/_links.html.erb (Duration: 1.1ms | Allocations: 111)
+  Rendered users/registrations/new.html.erb within layouts/application (Duration: 18.3ms | Allocations: 2847)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 174)
+  Rendered shared/_messages.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 74)
+  Rendered layout layouts/application.html.erb (Duration: 58.7ms | Allocations: 11537)
+Completed 200 OK in 63ms (Views: 61.0ms | ActiveRecord: 0.0ms | Allocations: 12128)
+
+
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "your_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE "your_app_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4614485208360745515)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateAdminUsers (20240316081347)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "admin_users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4614485208360745515)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (86.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "your_app_development"[0m
+  [1m[35m (33.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "your_app_test"[0m
+  [1m[35m (106.3ms)[0m  [1m[35mCREATE DATABASE "your_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (110.7ms)[0m  [1m[35mCREATE DATABASE "your_app_test" ENCODING = 'unicode'[0m
+  [1m[35m (26.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (9.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4614485208360745515)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateAdminUsers (20240316081347)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "admin_users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admin_users_on_email" ON "admin_users" ("email")[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admin_users_on_reset_password_token" ON "admin_users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240316081347"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveAdminComments (20240316081349)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "active_admin_comments" ("id" bigserial primary key, "namespace" character varying, "body" text, "resource_type" character varying, "resource_id" bigint, "author_type" character varying, "author_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE INDEX "index_active_admin_comments_on_resource" ON "active_admin_comments" ("resource_type", "resource_id")[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE INDEX "index_active_admin_comments_on_author" ON "active_admin_comments" ("author_type", "author_id")[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE INDEX "index_active_admin_comments_on_namespace" ON "active_admin_comments" ("namespace")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240316081349"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateUsers (20240316081456)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240316081456"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddRoleToAdminUsers (20240316082456)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "admin_users" ADD "role" smallint DEFAULT 0 NOT NULL[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240316082456"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveAdminManagedResources (20240316082457)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "active_admin_managed_resources" ("id" bigserial primary key, "class_name" character varying NOT NULL, "action" character varying NOT NULL, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "active_admin_managed_resources_index" ON "active_admin_managed_resources" ("class_name", "action", "name")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240316082457"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveAdminPermissions (20240316082458)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "active_admin_permissions" ("id" bigserial primary key, "managed_resource_id" integer NOT NULL, "role" smallint DEFAULT 0 NOT NULL, "state" smallint DEFAULT 0 NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "active_admin_permissions_index" ON "active_admin_permissions" ("managed_resource_id", "role")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240316082458"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateCourses (20240316082707)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "courses" ("id" bigserial primary key, "name" character varying, "description" text, "course_fees" float, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240316082707"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateStudents (20240316082728)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "students" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "phone_number" integer, "course_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_a258d82422"
+FOREIGN KEY ("course_id")
+  REFERENCES "courses" ("id")
+)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE INDEX "index_students_on_course_id" ON "students" ("course_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240316082728"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateInstructors (20240316082753)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "instructors" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "phone_number" integer, "course_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_adb8ebb749"
+FOREIGN KEY ("course_id")
+  REFERENCES "courses" ("id")
+)[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE INDEX "index_instructors_on_course_id" ON "instructors" ("course_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240316082753"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddColumnToTable (20240316091129)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "first_name" character varying[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "last_name" character varying[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "phone_number" integer[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "gender" character varying[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "language_known" character varying[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "city" character varying[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "state" character varying[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "country" character varying[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "pincode" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240316091129"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActiveStorageTables (20240316101904)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "service_name" character varying NOT NULL, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (9.8ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" bigserial primary key, "blob_id" bigint NOT NULL, "variation_digest" character varying NOT NULL, CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240316101904"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RemoveForeignKeyFromTable (20240316112252)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "students" DROP CONSTRAINT "fk_rails_a258d82422"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "students" DROP COLUMN "course_id"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "instructors" DROP CONSTRAINT "fk_rails_adb8ebb749"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "instructors" DROP COLUMN "course_id"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240316112252"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddReferencesToCourses (20240316112510)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "courses" ADD "student_id" bigint[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE INDEX "index_courses_on_student_id" ON "courses" ("student_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "courses" ADD CONSTRAINT "fk_rails_06d459a540"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
+[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "courses" ADD "instructor_id" bigint[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE INDEX "index_courses_on_instructor_id" ON "courses" ("instructor_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "courses" ADD CONSTRAINT "fk_rails_2ab3132eb0"
+FOREIGN KEY ("instructor_id")
+  REFERENCES "instructors" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240316112510"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddReferencesToStudent (20240316114850)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "students" ADD "course_id" bigint[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE INDEX "index_students_on_course_id" ON "students" ("course_id")[0m
+  [1m[35m (1.6ms)[0m  [1m[35mALTER TABLE "students" ADD CONSTRAINT "fk_rails_a258d82422"
+FOREIGN KEY ("course_id")
+  REFERENCES "courses" ("id")
+[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "instructors" ADD "course_id" bigint[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE INDEX "index_instructors_on_course_id" ON "instructors" ("course_id")[0m
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "instructors" ADD CONSTRAINT "fk_rails_adb8ebb749"
+FOREIGN KEY ("course_id")
+  REFERENCES "courses" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240316114850"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RemoveForeignKeyFromcourse (20240316115052)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "courses" DROP CONSTRAINT "fk_rails_06d459a540"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "courses" DROP COLUMN "student_id"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "courses" DROP CONSTRAINT "fk_rails_2ab3132eb0"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "courses" DROP COLUMN "instructor_id"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240316115052"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddColumnToUser (20240319060101)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "status" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240319060101"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to ChangeStatusToDefault (20240319063718)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ALTER COLUMN "status" TYPE integer, ALTER COLUMN "status" SET DEFAULT 0[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240319063718"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to RemoveForeginkeyFromInstructor (20240319082252)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "instructors" DROP CONSTRAINT "fk_rails_adb8ebb749"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "instructors" DROP COLUMN "course_id"[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240319082252"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddReferenceToCourse (20240319082439)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "courses" ADD "instructor_id" bigint[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE INDEX "index_courses_on_instructor_id" ON "courses" ("instructor_id")[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "courses" ADD CONSTRAINT "fk_rails_2ab3132eb0"
+FOREIGN KEY ("instructor_id")
+  REFERENCES "instructors" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240319082439"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2025-04-02 12:10:38.596557"], ["updated_at", "2025-04-02 12:10:38.596557"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4614485208360745515)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
